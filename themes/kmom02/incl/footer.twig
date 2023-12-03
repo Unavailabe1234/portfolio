@@ -1,0 +1,58 @@
+<footer class="footer">
+<nav>
+    <nav class="row">
+        <ul class="col3 box">
+        <li class="headline"> 
+            <p>Validering:</p>
+        </li>
+        <li><a href="http://validator.w3.org/check/referer">HTML</a></li>
+        <li><a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></li>
+        <li><a href="http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn</a></li>
+        <li><a href="https://validator.w3.org/checklink">Link checker</a></li>
+        </ul>
+    
+        <ul class="col3 box">
+        <li class="headline">
+            <p>Manualer:</p>
+        </li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">MDN: HTML</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN: CSS</a></li>
+            <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+            <li><a href="https://www.w3.org/2009/cheatsheet/">Cheat Sheet</a></li>
+            <li><a href="https://www.php.net/manual/en/">PHP</a></li>
+            <li><a href="https://www.w3schools.com/html/">Html Basics</a></li>
+        </ul>
+
+        <ul class="col3 box">
+        <li class="headline">
+            <p> Verktyg: </p>
+        </li>
+            <li><a href="http://codepen.io">Codepen</a></li>
+            <li><a href="https://www.frontendmentor.io/">Frontend Mentor</a></li>
+        </ul>
+    </nav>
+
+    <ul class="row">
+        <li class="col1 final">
+        <p>Denna sidan är Copyright &copy; av Marcus.</p>
+        <i class="fa-brands fa-font-awesome"></i>
+        </li>
+    </ul>
+</nav>
+</footer>
+
+    </div>
+    <div class="social">
+        <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
+        {% for social in pages["_meta"].meta.social %}
+        <a href="{{ social.url }}" title="{{ social.title }}" role="button">
+            <i class="{{ social.icon }}" aria-hidden="true"></i>
+            <span class="sr-only">{{ social.title }}</span>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="{{ theme_url }}/../shared//js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>
+<script src="{{ theme_url }}/../shared//js/utils.js" type="text/javascript"></script>
+<script src="{{ theme_url }}/../shared//js/responsive-navbar.js" type="text/javascript"></script>

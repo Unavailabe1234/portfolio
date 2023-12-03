@@ -1,0 +1,19 @@
+body {
+    font-family:'Open Sans', sans-serif;
+    color: $background-color;
+  
+    h1 {
+      color: $secondary-color;
+    }
+  
+    p {
+      margin-bottom: 1em;
+    }
+  
+    // Media query for responsive design
+    @media screen and (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+    }
+  }
