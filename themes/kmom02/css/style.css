@@ -6481,7 +6481,7 @@ body p {
  */
 .footer {
   background: linear-gradient(to bottom, rgb(245, 240, 240), rgb(168, 162, 162));
-  color: #FFF;
+  color: rgba(207, 177, 177, 0.88);
   padding: 0 1em;
 }
 
@@ -6556,5 +6556,109 @@ body p {
 }
 
 .title {
-  display: inline;
+  display: grid;
+}
+
+.title {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+/* technology.scss */
+.landingpage {
+  display: grid;
+  gap: 1em 1em;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 8ch auto;
+  gap: 100px 300px;
+  padding: 100px;
+}
+
+.box_ {
+  background-color: #a59c9c;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.box1 {
+  grid-column: span 1;
+}
+
+.box2 {
+  grid-column: span 2;
+}
+
+.box3 {
+  grid-column: span 3;
+}
+
+.box4 {
+  grid-column: span 2;
+}
+
+.box5 {
+  grid-column: span 1;
+}
+
+.box6 {
+  grid-column: span 3;
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .box_ {
+    grid-column: span 1;
+  }
+  .title {
+    grid-column: span 1;
+  }
+}
+.sidebar {
+  background-color: rgb(169, 169, 169);
+  color: #fff;
+  padding: 20px;
+  display: inline-block;
+  flex-direction: row;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+.aside {
+  display: flex;
 }

@@ -1,3 +1,8 @@
 .title {
-display: inline;
+display: grid;
+}
+
+.title {
+    grid-column: span 3;
+    justify-self: center;
 }
